@@ -1,1 +1,3 @@
 # highschooltextbook
+人教社高中教材书封及扉页仿制
+代码由AI生成，请使用XeLaTeX编译
