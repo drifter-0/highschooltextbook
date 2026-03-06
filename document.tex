@@ -70,17 +70,34 @@
 \def\N{40} % 数量
 
 % 数学版本
-\newcommand{\ab}{%
-	\definecolor{abcolor}{RGB}{247,148,60} % A版颜色
+\newcommand{\abo}{%
+	\definecolor{abcolor1}{RGB}{247,148,60} % A版封面
 	\node[
 	anchor=south east,
 	inner sep=0pt,
 	outer sep=0pt,
-	text=abcolor,
+	text=abcolor1,
+	opacity=1,
 	xshift=-1.5cm,
 	yshift=1.5cm
 	] at (21cm,-29.7cm) {%
-		{\dengxianeng\fontsize{60pt}{60pt}\selectfont A}%
+		{\fontsize{60pt}{60pt}\selectfont A}%
+		\hspace{-0.05em}%
+		{\heit\fontsize{30pt}{30pt}\selectfont 版}%
+	};
+}
+\newcommand{\abt}{%
+	\definecolor{abcolor2}{RGB}{247,148,60} % A版扉页
+	\node[
+	anchor=south east,
+	inner sep=0pt,
+	outer sep=0pt,
+	text=abcolor2,
+	opacity=1,
+	xshift=-1.5cm,
+	yshift=1.5cm
+	] at (21cm,-29.7cm) {%
+		{\fontsize{60pt}{60pt}\selectfont A}%
 		\hspace{-0.05em}%
 		{\heit\fontsize{30pt}{30pt}\selectfont 版}%
 	};
@@ -483,7 +500,7 @@
 			\node[anchor=south west, xshift=2cm, yshift=1.5cm] 
 			at (0,-29.7cm) {\includegraphics[width=6cm]{\currentlogo}};
 			
-			\bbo
+			\abo
 		\end{scope}
 	\end{tikzpicture}
 	\clearpage
@@ -588,7 +605,7 @@
 			
 			\node[anchor=center] at (10.5cm, -27.3cm) {·北京·};
 			
-			\bbt
+			\abt
 		\end{scope}
 	\end{tikzpicture}
 \end{document}
